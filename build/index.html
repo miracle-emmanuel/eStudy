@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/android-chrome-192x192.png">
+</head>
+
+<body class="min-h-screen bg-amber-50 dark:bg-black dark:text-white">
+    <header class="bg-white text-black sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">
+                <a href="#home">📚 eStudy</a>
+            </h1>
+            <button id="humburger-button" class="text-3xl md:hidden cursor-pointer">
+                &#9776;
+            </button>
+            <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                <a href="#home" class="hover:opacity-90">Home</a>
+                <a href="#about" class="hover:opacity-90">About</a>
+                <a href="#courses" class="hover:opacity-90">Courses</a>
+                <a href="#reviews" class="hover:opacity-90">Reviews</a>
+                <a href="#contact" class="hover:opacity-90">Contacts</a>
+            </nav>
+        </section>
+        <section id="mobile-menu"
+            class="absolute top-0 bg-white w-full text-1xl flex-col origin-top animate-open-menu hidden">
+            <button class="text-3xl self-end px-4">
+                &times;
+            </button>
+            <nav class="flex flex-col items-end self-center px-6" aria-label="mobile">
+                <a href="#home" class="w-full text-center py-2 hover:opacity-90"> Home</a>
+                <a href="#about" class=" w-full text-center py-2 hover:opacity-90">About</a>
+                <a href="#courses" class="w-full text-center py-2 hover:opacity-90">Courses</a>
+                <a href="#reviews" class="w-full text-center py-2 hover:opacity-90">Reviews</a>
+                <a href="#contact" class="w-full text-center py-2 hover:opacity-90">Contacts</a>
+
+            </nav>
+        </section>
+    </header>
+    <!-- End of header -->
+    <main class=" px-10">
+        <section id="home" class="flex flex-col-reverse justify-center sm:flex-row items-center scroll-mt-20">
+            <article class="sm:w-1/2 mx-10 text-center">
+                <h1 class=" text-3xl
+                 font-bold sm:text-6xl  text-slate-900 dark:text-white my-10">
+                    Knowledge with <span class="text-green-700">eStudy
+                </h1>
+                <p class=" text-1xl w-4/4 sm:text-left text-slate-700 dark:text-slate-400 my-11">
+                    eStudy is your gate way to a world of limitless learning possibilities.
+                    with our
+                    cutting edge e-learniung platform, you can explore a verse libery of courses from academic subjects
+                    to
+                    pratical skills all design to help you acheive your goals.
+                </p>
+
+            </article>
+            <img src="/img/Picsart_24-04-10_01-53-28-812.png" alt="" class="w-1/2" />
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2 mt-5" />
+        <!-- About -->
+        <section id="about" class="flex flex-col-reverse justify-center sm:flex-row items-center scroll-mt-20">
+            <img src="/img/Picsart_24-04-10_01-42-41-945.png" alt="" class="w-1/2" />
+            <article class="sm:w-1/2 mx-10 text-center">
+                <!-- <img src="/img/pngwing.com.png" alt="" class="w-1/2" /> -->
+                <h1 class=" text-3xl
+                 font-bold sm:text-6xl  text-slate-900 dark:text-white my-10">
+                    About<span class="text-green-700"> us
+                </h1>
+                <p class=" text-1xl w-4/4 sm:text-left text-slate-700 dark:text-slate-400 my-11">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo beatae obcaecati
+                    accusantium asperiores dolor veritatis! Impedit quod velit iusto consequuntur, reprehenderit
+                    pariatur perspiciatis id voluptatum dolorum aperiam architecto commodi!
+                </p>
+
+            </article>
+
+        </section>
+        <!-- Courses section entailes all the courses being studied at eStudy -->
+        <hr class="mx-auto bg-black dark:bg-white w-1/2 mt-5" />
+        <section id="courses" class="p-6 scroll-mt-20">
+            <h1 class=" text-3xl
+            font-bold sm:text-6xl text-center text-slate-900 dark:text-white my-10">
+                Cour<span class="text-green-700">ses
+            </h1>
+            <ul class="list-none mx-auto my-12 flex flex-wrap sm:flex-row gap-20 justify-center">
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/5037367.jpg" alt="Adventure" class="mb-6 w-2/3" />
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white font-bold">
+                        App Dev
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                    <a href="#" class="self-end border border-solid border-black bg-purple-400 p-2 rounded-3xl mt-3 hover:bg-purple-600">Learn more➡</a>
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/3573406.jpg" alt="Adventure" class="mb-6 w-2/3" />
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white font-bold">
+                        Cyber Security
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                    <a href="#" class="self-end border border-solid border-black bg-green-700 p-2 rounded-3xl mt-3 hover:bg-green-600">Learn more➡</a>
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/Portfolio-update.jpg" alt="Adventure" class="mb-6 w-2/2" />
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white font-bold">
+                        Content Creation
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                    <a href="#" class="self-end border border-solid border-black bg-red-500 p-2 rounded-3xl mt-3 hover:bg-red-600">Learn more➡</a>
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid  dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/Picsart_24-04-10_02-22-00-870.png" alt="Adventure" class="mb-6 w-2/3" />
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white font-bold">
+                        Web design
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                    <a href="#" class="self-end border border-solid border-black bg-green-200 p-2 rounded-3xl mt-3 hover:bg-green-400">Learn more➡</a>
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/Picsart_24-04-10_01-53-28-812.png" alt="" class="mb-6 w-2/3" />
+                    <h3 class="text-2xl text-center text-slate-900 dark:text-white font-bold">
+                        Digital Marketing
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                    <a href="#" class="self-end border border-solid border-black bg-blue-400 p-2 rounded-3xl mt-3 hover:bg-blue-700">Learn more➡</a>
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid  dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <img src="/img/Picsart_24-04-10_02-25-30-269.png" alt="Web Development" class="mb-6 w-2/3" />
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white font-bold">
+                        Web <br>Dev
+                    </h3>
+                    <p class="sm:text-1xl text-1xl mt-2 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+
+                    </p>
+                
+                    <a href="#" class="self-end border border-solid border-black bg-blue-400 p-2 rounded-3xl mt-6 hover:bg-blue-600">Learn more➡</a>
+                </li>
+            </ul>
+        </section>
+        <!-- reviews -->
+        <hr class="mx-auto bg-black dark:bg-white w-1/2 mt-5" />
+        <section id="reviews" class="p-6 scroll-mt-20">
+            <h1 class=" text-3xl
+            font-bold sm:text-6xl text-center text-slate-900 dark:text-white my-10">
+                Revi<span class="text-green-700">ews
+            </h1>
+            <ul class="list-none mx-auto my-12 flex flex-wrap sm:flex-row gap-20 justify-center">
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+
+                    <p class="sm:text-1xl text-1xl my-7 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit maiores, laudantium sint
+                        impedit dolorem, magnam!
+                    </p>
+                    <img src="/img/review 1.jpg" alt="review" class="mb-6 w-2/4 rounded-full" />
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid  dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <p class="sm:text-1xl text-1xl my-5 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit maiores, laudantium sint
+                        impedit dolorem, magnam!
+
+                    </p>
+                    <img src="/img/review 2.jpg" alt="review" class="mb-6 w-2/4 rounded-full" />
+                </li>
+                <li
+                    class="w-2/3 sm:w-1/4 flex flex-col items-center border border-solid dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-2xl shadow-xl">
+                    <p class="sm:text-1xl text-1xl my-7 text-center text-slate-500 dark:text-slate-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias necessitatibus molestias
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit maiores, laudantium sint
+                        impedit dolorem, magnam!
+                    </p>
+                    <img src="/img/review 3.jpg" alt="review" class=" w-2/4 rounded-full" />
+                </li>
+            </ul>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2 mt-5" />
+
+        <h1 id="contact" class=" text-3xl
+        font-bold sm:text-6xl text-center text-slate-900 dark:text-white my-10">
+            Contact<span class="text-green-700"> us
+        </h1>
+        <section class="flex flex-col-reverse justify-center sm:flex-row items-center scroll-mt-20">
+            <article class="sm:w-1/2 mx-10 text-center">
+                <form action="https://formspree.io/f/xdoqykbg" method="POST"
+                    class="max-w-2xl max-auto text-1xl sm:text-1xl flex flex-col gap-4 ">
+                    <!-- name -->
+                    <input type="text" name="Name" required placeholder="  Your Name" class="rounded-2xl text-black">
+                    <!-- email -->
+                    <input id="email" name="Email" type="email" required placeholder="  Your Email" class="rounded-2xl text-black">
+                    <!-- textarea -->
+                    <textarea name="Message" id="message" required cols="20" rows="10" placeholder="   Your Message" required
+                        class="rounded-2xl bg-slate-200 text-black"></textarea>
+                        <!-- h-captcha -->
+                        <!-- <div class="h-captcha" data-captcha="true"></div> -->
+                        <!-- button -->
+                    <button type="submit"
+                        class="h-10 px-3 mt-2 bg-teal-300 text-black hover:bg-slate-400 rounded-1xl ">Send</button>
+
+                </form>
+            </article>
+            <img src="/img/Picsart_24-04-17_00-58-07-214.png" alt="" class="w-1/2" />
+        </section>
+    </main>
+    <br>
+    <footer id="footer" class="bg-gray-400 text-1xl sm:text-1xl scroll-mt-20 flex flex-col item-left">
+        <section class="max-w-4xl mx-auto p-4 grid justify-between items-center sm:gap-4 gap-4 text-center sm:text-xs">
+            <h1 class="text-lg font-medium">
+                <a href="#hero">📚 eStudy</a>
+            </h1>
+            <nav class=" sm:block space-x-8 text-sm" aria-label="main">
+                <a href="#home" class="hover:opacity-90">Home</a>
+                <a href="#about" class="hover:opacity-90">About Us</a>
+                <a href="#courses" class="hover:opacity-90">Courses</a>
+            </nav>
+            <nav class=" sm:block space-x-8 text-sm" aria-label="main">
+                <a href="#" class="hover:opacity-90">Instagram</a>
+                <a href="#" class="hover:opacity-90">Facebook</a>
+                <a href="#" class="hover:opacity-90">Telegram</a>
+                <a href="#" class="hover:opacity-90">X</a>
+                <a href="#" class="hover:opacity-90">Whatsapp</a>
+                <a href="#" class="hover:opacity-90">Linkedin</a>
+            </nav>
+        </section>
+    </footer>
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+</body>
+
+</html>
